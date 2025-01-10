@@ -8,13 +8,13 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-groq_api_key = os.getenv("GROQ_API_KEY")
+groq_api_key  = os.getenv("GROQ_API_KEY")
 
 # web search agent
 web_search_agent = Agent(
     name ="web search agent",
     role = "search the web for information",
-    model =  Groq(id = "Llama-3.3-70b-versatile",api_key="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"),
+    model =  Groq(id = "Llama-3.3-70b-versatile",api_key="groq_api_key"),
     tools = [DuckDuckGo()],
     instructions = ["always provide source"],
     show_tools_calls= True,
@@ -24,7 +24,7 @@ web_search_agent = Agent(
 #finacial agent
 financial_agent = Agent(
     name = "financial agent",
-    model =  Groq(id = "Llama-3.3-70b-versatile",api_key="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"),
+    model =  Groq(id = "Llama-3.3-70b-versatile",api_key="groq_api_key"),
     tools =[YFinanceTools(stock_price = True , analyst_recommendations = True ,
                            stock_fundamentals = True ,company_news = True,technical_indicators = True)],
     instructions = ["use table to show data"],
@@ -35,7 +35,7 @@ financial_agent = Agent(
 #multi ai agent
 multi_ai_agent = Agent(
     team = [web_search_agent,financial_agent],
-    model =  Groq(id = "Llama-3.3-70b-versatile",api_key="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"),
+    model =  Groq(id = "Llama-3.3-70b-versatile",api_key="groq_api_key"),
     instructions=["always show sources","use tables to show data"],
     show_tools_calls = True,
     markdown = True
