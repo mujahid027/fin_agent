@@ -4,6 +4,12 @@ from phi.tools.duckduckgo import DuckDuckGo
 from phi.tools.yfinance import YFinanceTools
 from dotenv import load_dotenv
 
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+groq_api_key = os.getenv("GROQ_API_KEY")
+
 # web search agent
 web_search_agent = Agent(
     name ="web search agent",
