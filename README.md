@@ -1,24 +1,12 @@
----
-
-
-
-
-
-
-
-# Fin Agent
+Multi-AI Agent 
+===============
 
 **Fin Agent** is a robust and intelligent financial consultant chatbot designed to offer personalized financial advice, manage budgets, and track expenses efficiently. Equipped with advanced voice and text integration, Fin Agent aims to redefine the digital financial advisory experience.
 
-## Features
-
-- **Voice Integration:** Seamless voice commands for input and response.
-- **Expense Tracking:** Automated categorization and management of expenses.
-- **Budget Management:** Customizable budget limits and notifications.
-- **Financial Advice:** AI-driven personalized financial recommendations.
-- **Data Security:** Secure encryption for all financial data.
-- **Customizable Dashboards:** Visual insights through interactive charts and graphs.
-- **Multi-Platform Support:** Available on web, desktop, and mobile.
+##Features
+   -Web Search Agent
+   -Financial Agent
+   -Multi-AI Agent
 
 ## Quick Start
 
